@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue:rgba(18, 11, 72, 1);
+    --blur:rgba(182, 179, 198, 1);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    width: 100%;
+    padding:0 20rem;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
+}
+button{
+    height: 4rem;
+    width: 8rem;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.canvasIcon{
+    position: absolute;
+}
+button:nth-child(1){
+    background-color: red;
+}
+button:nth-child(2){
+    background-color: blue;
+}
+button:nth-child(3){
+    background-color: green;
+}
+button:nth-child(4){
+    background-color: yellow;
+}
+.canvasIcon{
+    height: 3rem;
+    width: 20rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: .5rem;
+    background-color: white;
+}
+.canvas{
+    z-index: 999;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top:60%;
+    left: 5%;
+}
